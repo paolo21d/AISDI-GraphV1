@@ -28,20 +28,18 @@ bool readFromFile(string &src, unsigned &vertex, unsigned &edge, vector<pair<uns
 	return true;
 }
 int main() {
-	/*Graph g;
-	g.inputGraphFromFile("graf1.txt");
-	g.printGraph();
-	cout << "Spojnosc: " << g.checkConnectivity();*/
 	unsigned v=0, e=0;
 	unsigned delV1, delV2, putV1, putV2;
 	vector<pair<unsigned, unsigned>> edges; //vector trzymajacy pary wierzcholkow, czyli poszczegolne krawedzi
 	string src = "graf1.txt";
+
 	if (!readFromFile(src, v, e, edges)) //wczytanie z pliku grafu
 		return -1;
 	cout << "Graf oryginalny:" << endl;
 	Graph g(v, e, edges);
 	g.printGraph();
 	cout << "//////////////////////" << endl;
+
 	for (unsigned i = 0; i < edges.size(); ++i) { //usuwanie kolejnych krawedzi wraz z ich wierzcholkami
 		vector<pair<unsigned, unsigned>> tempEdges;
 		unsigned tempE=0, tempV=v-2;

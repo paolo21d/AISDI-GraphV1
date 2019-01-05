@@ -17,7 +17,7 @@ public:
 	void inputGraph(); //wczytanie grafu z konsoli
 	bool inputGraphFromFile(std::string src); //wczytanie grafu z pliku (plik nie moze byc zakonczony enterem)
 	bool checkConnectivity();
-	void getBridges(); //wypisanie mostow rozleglych grafu
+	void getBridges(); //wypisanie mostow rozleglych grafu | nie stosowane chwilowo
 	void printGraph();
 };
 
