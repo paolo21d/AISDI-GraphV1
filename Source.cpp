@@ -66,8 +66,8 @@ int main() {
 			tempEdges.push_back(make_pair(putV1, putV2));
 		}
 		Graph tempGraph(tempV, tempE, tempEdges);
-		cout << "Graf " << i <<" Usunieto: "<<delV1<<" "<<delV2<< endl;
-		tempGraph.printGraph();
+		//cout << "Graf " << i <<" Usunieto: "<<delV1<<" "<<delV2<< endl;
+		//tempGraph.printGraph();
 		if (!tempGraph.checkConnectivity()) {
 			cout << "**********Most rozlegly: " << delV1 << " " << delV2 << endl;
 		}
